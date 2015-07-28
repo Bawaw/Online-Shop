@@ -1,0 +1,150 @@
+/*!
+ * Start Bootstrap - Shop Homepage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    background-color: black;
+}
+
+.col-md-3{
+    margin-top: -20px;
+}
+
+#messages{
+    font-size: 2em;
+    text-align: center;
+}
+#backgroundLandscape{
+    background-image: url(../images/Background1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:1800px;
+}
+
+#backgroundOverlay{
+    background-color: rgba(8,0,0,0.8);
+    height:100%
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 126px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail .imageContainer{
+    height: 200px;    
+    width: 100%;
+    background-color: black;
+    
+    text-align: center;
+}
+
+.thumbnail .alignHelper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.thumbnail .imageContainer img {
+    vertical-align: middle;
+    padding-top: 20%;
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.row table{
+    width: 65%;
+}
+
+.row .itemDescription{
+    width: 65%;
+    float:right;
+}
+
+.row .itemDescription p{
+    margin-right: 20px;
+}
+
+#dialog{
+   color:rgb(45,11,8);
+}
+
+#dialog .PurchaseButton{
+    width:100%;
+    color: #ccc;
+}
+
+#dialog h3{
+    margin-top: 0px;
+}
+
+.PurchaseButton{
+    margin:0px;
+    height: 30px;
+    float: right;
+    width: 90px;
+    background-color: rgb(45,11,8);
+    border: 1px solid #d9d9d9;
+    color: #ccc;
+}
+
+.row .PurchaseButton{
+    margin:0px;
+    height: 30px;
+    float: right;
+    width: 90px;
+    background-color: rgb(45,11,8);
+    border: 1px solid #d9d9d9;
+    color: #ccc;
+}
+
+.row button{
+    margin: 10px;
+    height: 40px;
+    float: right;
+    width: 30%;
+}
+
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 40px;
+    color: #d17581;
+}
+
+.ratings p{
+    margin-top: 8px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+footer {
+    margin: 50px 0;
+}

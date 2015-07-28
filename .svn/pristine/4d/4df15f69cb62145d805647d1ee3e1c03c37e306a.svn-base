@@ -1,0 +1,44 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ui.controller;
+
+import backend.model.User;
+import backend.service.Service;
+import javax.servlet.http.HttpServletRequest;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController
+public abstract class ControllerParent {
+    private Service service;
+    
+    public ControllerParent() {
+        service = new Service("inmemory");
+    }
+
+    public Service getService() {
+        return service;
+    }
+    
+    //@Autowired
+    public void setService(Service service){
+        this.service = service;
+    }
+    
+    public boolean authenticated(HttpServletRequest request){
+        User u = (User)request.getSession().getAttribute("User");
+        request.setAttribute("user", u);
+        return u != null;
+    }
+    
+    public User getAuthenticatedUser(HttpServletRequest request){
+        return (User)request.getSession().getAttribute("User");
+    }
+    
+    public void signOut(HttpServletRequest request){
+        request.getSession().invalidate();
+    }
+}
